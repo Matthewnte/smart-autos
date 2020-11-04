@@ -4,8 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,15 +11,9 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
   },
   title: {
     flexGrow: 1,
-  },
-  btn: {
-    textTransform: 'none',
   },
 }));
 
@@ -30,20 +22,12 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="transparent" elevation={0} style={{ color: '#fff' }}>
+      <AppBar position="static" elevation={0}>
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Smart autos
+            Logo
           </Typography>
-          <Button color="inherit" className={classes.btn}>
-            Become a dealer
-          </Button>
-          <Button color="inherit" className={classes.btn}>
-            Login
-          </Button>
+          <Button color="inherit">Exit</Button>
         </Toolbar>
       </AppBar>
     </div>
