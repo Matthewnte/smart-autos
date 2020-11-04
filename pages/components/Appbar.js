@@ -36,10 +36,10 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Smart autos
+            SMART AUTOS
           </Typography>
           <Button color="inherit" className={classes.btn}>
-            Become a dealer
+            Become a Dealer
           </Button>
           <Button color="inherit" className={classes.btn}>
             Login
